@@ -77,6 +77,8 @@ def main():
     plt.ylabel(f"p(a1|q={q},xeff={xeff})")
     plt.savefig(f"{outdir}/p_a1_given_q_xeff.png")
 
+    ## TODO: train ML model to generate p(a1|xeff,q) for different q, xeff
+
 
 if __name__ == "__main__":
     main()
