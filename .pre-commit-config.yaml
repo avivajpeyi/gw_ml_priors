@@ -1,0 +1,11 @@
+repos:
+-   repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+    - id: black
+      language_version: python3.9
+-   repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.10.1
+    hooks:
+    -   id: isort # sort imports alphabetically and separates import into sections
+        args: [-w=88, -m=3, -tc, -sp=setup.cfg ]
